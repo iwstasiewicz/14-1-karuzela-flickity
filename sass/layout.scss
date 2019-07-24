@@ -1,0 +1,69 @@
+.button-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.button--previous {
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+  border: 1px solid #333;
+}
+
+.carousel {
+  height: 50vh;
+  min-height: 250px;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 50vh;
+  min-height: 250px;
+  margin-right: 10px;
+  background-color: red;
+  counter-increment: carousel-cell;
+
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ddd;
+  color: white;
+  background-size: cover;
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
