@@ -14,7 +14,7 @@ previousWrappedButton.addEventListener('click', function () {
 
 // FUNKCJA DO PASKA PRZEWIJANIA
 
-// var flkty = new Flickity('.carousel');
+var flkty = new Flickity('.carousel');
 
 var progressBar = document.querySelector('.progress-bar')
 
