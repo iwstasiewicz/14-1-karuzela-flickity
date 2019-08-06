@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="vendor/_normalize.css">
   <link rel="stylesheet" href="vendor/flickity.min.css">
   <link rel="stylesheet" href="css/layout.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
   <title>zadanie 14.1</title>
 </head>
 
@@ -16,7 +16,7 @@
   <div class="button-group">
     <button class="button--previous">Restart</button>
   </div>
-  <div class="carousel" data-flickity='{ "hash": true }'>
+  <div class="carousel">
     <div class="carousel-cell" id="carousel-cell1">
       <div id="results" class="container"
         style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
@@ -44,44 +44,9 @@
     </div>
   </div>
   <div class="progress-bar"></div>
-  <script id="template-item" type="x-tmpl-mustache">
-    <p>Pani {{image}} ma przy sobie {{title}} i może kupić {{description}}</p>
-  </script>
-  <script>
-    var data = [{
-        image: "asia",
-        title: "10$",
-        description: "<p>Lorem ipsum</p> <img src='http://via.placeholder.com/400x200' alt='photo placeholder'> <p>Dolor sit.</p>"
-      },
-      {
-        image: "kasia",
-        title: "20$",
-        description: "<p>Lorem ipsum</p> <img src='http://via.placeholder.com/400x200' alt='photo placeholder'> <p>Dolor sit.</p>"
-      },
-      {
-        image: "monika",
-        title: "15$",
-        description: "<p>Lorem ipsum</p> <img src='http://via.placeholder.com/400x200' alt='photo placeholder'> <p>Dolor sit.</p>"
-      },
-    ];
 
-    (function () {
-      console.log("działa");
-      var templateItem = document.getElementById("template-item").innerHtml;
-      Mustache.parse(templateItem);
-
-      var listItems = "";
-      for (let i = 0; i < data.length; i++) {
-        console.log('data');
-        listItems = Mustache.render(templateItem, data[i]);
-      }
-      results.insertAdjacentHTML("beforeend", listItems);
-
-    })();
-  </script>
   <script src="vendor/flickity.js"></script>
   <script src="vendor/hash.js"></script>
-
   <script src="script.js"></script>
 
 </body>
