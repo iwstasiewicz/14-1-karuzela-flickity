@@ -19,34 +19,85 @@
   <div class="carousel">
     <div class="carousel-cell" id="carousel-cell1">
       <div id="results" class="container"
-        style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
+        style="background-image: url(https://cdn.pixabay.com/photo/2015/07/17/13/44/cucumbers-849269_1280.jpg)">
+        <h2>Templates tests:</h2>
+        <div id="results"></div>
       </div>
     </div>
     <div class="carousel-cell" id="carousel-cell2">
       <div id="results" class="container"
-        style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
+        style="background-image: url(https://cdn.pixabay.com/photo/2011/03/16/16/01/tomatoes-5356_1280.jpg)">
+        <h2>Templates tests:</h2>
+        <div id="results"></div>
       </div>
     </div>
     <div class="carousel-cell" id="carousel-cell3">
       <div id="results" class="container"
-        style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
+        style="background-image: url(https://cdn.pixabay.com/photo/2014/10/22/21/54/sweet-peppers-499068_1280.jpg)">
+        <h2>Templates tests:</h2>
+        <div id="results"></div>
       </div>
     </div>
     <div class="carousel-cell" id="carousel-cell4">
       <div id="results" class="container"
-        style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
+        style="background-image: url(https://cdn.pixabay.com/photo/2017/04/22/12/38/olives-2251260_1280.jpg)">
+        <h2>Templates tests:</h2>
+        <div id="results"></div>
       </div>
     </div>
     <div class="carousel-cell" id="carousel-cell5">
       <div id="results" class="container"
-        style="background-image: url(https://cdn.pixabay.com/photo/2019/07/14/01/32/berry-breakfast-4336049_1280.jpg)">
+        style="background-image: url(https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_1280.jpg)">
+        <h2>Templates tests:</h2>
+        <div id="results"></div>
       </div>
     </div>
   </div>
   <div class="progress-bar"></div>
 
+  <script id="template-product-list" type="x-tmpl-mustache">
+    <h3>Product list</h3>
+    <ul>
+    {{{products}}}
+    </ul>
+    </script>
+
+  <script id="template-product-item" type="x-tmpl-mustache">
+    <li>{{image}} są dostępne. {{ title }} warto spożywać ponieważ {{ description }}!</li>
+</script>
+
+  <script>
+    var productsData = [{
+        image: "Ogórki świeże",
+        title: "Ogórki",
+        description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+      },
+      {
+        image: "Pomidory",
+        title: "Pomidory malinowe",
+        description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+      },
+      {
+        image: "Papryka",
+        title: "Papryka czerwona",
+        description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+      },
+      {
+        image: "Oliwki",
+        title: "Oliwki duże",
+        description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+      },
+      {
+        image: "Marchew",
+        title: "Smaczna marchewka",
+        description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+      }
+    ];
+  </script>
+
   <script src="vendor/flickity.js"></script>
   <script src="vendor/hash.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
   <script src="script.js"></script>
 
 </body>
